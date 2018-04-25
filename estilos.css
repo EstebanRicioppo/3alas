@@ -1,0 +1,76 @@
+/* estilos.css */
+
+:root{
+	--negro: #29272a;
+	--negroVerdadero: #000;
+	--blanco: #FFF;
+	--naranja: #f69c21;
+	--amarillo: #FFFF00;
+	
+	}
+*{ 
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	}	
+
+body{
+	background-color: var(--negro);
+	background-image: url("images/pattern.jpg");
+	font-family: Arial;
+}
+.cabecera{
+	/* background-color: red; */
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	margin-top: 8px;
+	margin-bottom: 12px;
+}
+.cabecera h1{
+	color: var(--naranja);
+		
+}
+.contenedor{
+	background-color: var(--blanco);
+	max-width: 1000px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.botonera{
+		background-color: var(--naranja);
+		padding-bottom: 10px;
+		padding-top: 10px;
+		padding-left: 15px;
+		}
+
+.botonera-lista{
+	display: flex;
+
+}
+.botonera li{
+	flex-grow: 1;
+	list-style:none;
+}
+.botonera a{
+	background-color: var(--naranja);
+	display: block;
+	text-decoration:none;
+	text-align: center;
+	color:var(--blanco);
+	border-right: 1px solid var(--blanco);
+	padding: 8px 20px;
+	}
+.botonera a:hover{
+color: var(--negro);
+
+}
+a.sin-borde{
+	border-right: none;
+}
